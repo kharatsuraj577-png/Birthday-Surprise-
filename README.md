@@ -379,7 +379,7 @@ button:active {
 <script>
 // COUNTDOWN
 function updateCountdown() {
-  const birthday = new Date("December 22, 2026 00:00:00").getTime();
+  const birthday = new Date("December 23, 2026 00:00:00").getTime();
   const now = new Date().getTime();
   const distance = birthday - now;
   const timer = document.getElementById("timer");
