@@ -1,307 +1,314 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Little Universe For Pratuu ❤️</title>
+<title>माझ्या बाळासाठी ❤️</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- background:#160e22;color:#fff;
- font-family:'Poppins',sans-serif;
+ background:#180e25;color:#fff;
+ font-family:'Noto Sans Devanagari',sans-serif;
  overflow-x:hidden;
 }
 body:before{
  content:"";position:fixed;inset:0;z-index:-1;
  background:
- radial-gradient(circle at 15% 15%,#b44b8755,transparent 35%),
- radial-gradient(circle at 85% 70%,#7050b455,transparent 40%),
- linear-gradient(145deg,#160e22,#321b3c,#170f29);
+ radial-gradient(circle at 15% 15%,#c34b9155,transparent 38%),
+ radial-gradient(circle at 85% 75%,#7750b555,transparent 40%),
+ linear-gradient(145deg,#180e25,#402044,#1b102c);
 }
-section{padding:85px 20px;text-align:center}
+section{padding:75px 18px;text-align:center}
 .hero{
- min-height:100vh;display:flex;align-items:center;
- justify-content:center;flex-direction:column;
- padding:30px 20px;
+ min-height:100vh;display:flex;flex-direction:column;
+ align-items:center;justify-content:center;padding:25px;
+}
+.script{font-family:'Tiro Devanagari Marathi',serif}
+h1{
+ font-family:'Tiro Devanagari Marathi',serif;
+ font-size:clamp(38px,9vw,65px);
+ color:#ffd0e8;line-height:1.5;
+}
+h2{
+ font-family:'Tiro Devanagari Marathi',serif;
+ font-size:36px;color:#ffd0e8;margin-bottom:23px;
 }
 .eyebrow{
- font-size:10px;letter-spacing:5px;color:#f5b9dd;
- margin-bottom:22px;
+ color:#f2b6d8;font-size:11px;
+ letter-spacing:2px;margin-bottom:18px;
 }
-h1,h2,.script{font-family:'Dancing Script',cursive}
-h1{font-size:clamp(55px,12vw,90px);color:#ffd0e9}
-h2{font-size:48px;color:#ffc9e7;margin-bottom:25px}
-.hero p{max-width:330px;line-height:2;color:#e8d5ed;margin:20px 0 28px}
-.hero-heart{font-size:43px;animation:pulse 1.5s infinite}
+.hero p{
+ max-width:340px;line-height:2;
+ color:#f0d9ed;margin:20px 0;
+}
+.heart{font-size:48px;animation:pulse 1.5s infinite}
 @keyframes pulse{50%{transform:scale(1.2)}}
 .btn{
- border:1px solid #ffc6e5;background:linear-gradient(120deg,#c65d9d,#8156b8);
- color:white;border-radius:50px;padding:15px 28px;
- font-size:13px;letter-spacing:1px;cursor:pointer;
- box-shadow:0 0 25px #d56eaa44;
- transition:.3s;
+ border:1px solid #ffc6e5;
+ background:linear-gradient(120deg,#c65d9d,#8156b8);
+ color:white;border-radius:40px;padding:14px 24px;
+ font-family:inherit;font-size:14px;
+ cursor:pointer;box-shadow:0 0 25px #d56eaa44;
 }
-.btn:active{transform:scale(.96)}
 .glass{
- max-width:540px;margin:auto;padding:30px 22px;
- border:1px solid #ffffff25;border-radius:25px;
- background:#ffffff0c;backdrop-filter:blur(12px);
- box-shadow:0 15px 50px #0003;
+ max-width:540px;margin:auto;padding:28px 20px;
+ border:1px solid #ffffff28;border-radius:24px;
+ background:#ffffff0d;backdrop-filter:blur(12px);
+ box-shadow:0 15px 45px #0003;
 }
-.countdown{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.countdown{
+ display:flex;justify-content:center;gap:9px;flex-wrap:wrap;
+}
 .time{
- min-width:68px;padding:15px 10px;border-radius:16px;
- background:#ffffff12;border:1px solid #ffffff18;
+ min-width:67px;padding:14px 8px;
+ border-radius:15px;background:#ffffff14;
 }
-.time strong{display:block;font-size:27px;color:#ffd0e9}
-.time small{font-size:9px;letter-spacing:2px;color:#dcb9df}
-.subtext{font-size:12px;color:#d9c2df;line-height:2;margin-top:22px}
+.time strong{display:block;font-size:25px;color:#ffd0e9}
+.time small{font-size:10px;color:#e6c6e5}
+.sub{
+ font-size:13px;line-height:2;color:#e8d3e8;
+ margin-top:18px;
+}
 .gallery{
  display:grid;grid-template-columns:1fr 1fr;
- gap:14px;max-width:520px;margin:30px auto;
+ gap:13px;max-width:520px;margin:28px auto;
 }
 .photo{
- position:relative;overflow:hidden;border-radius:20px;
- background:#44254d;border:1px solid #ffffff25;
- box-shadow:0 12px 30px #0004;
+ overflow:hidden;border-radius:18px;
+ background:#ffffff12;border:1px solid #ffffff25;
 }
 .photo img{
- width:100%;height:245px;object-fit:cover;display:block;
- transition:transform .6s;
+ display:block;width:100%;height:230px;object-fit:cover;
 }
-.photo:active img{transform:scale(1.06)}
 .photo p{
- font-family:'Dancing Script',cursive;font-size:22px;
- color:#ffd0e9;padding:12px 5px;
+ padding:12px 5px;color:#ffd0e8;
+ font-family:'Tiro Devanagari Marathi',serif;
+ font-size:16px;
 }
 .letter{
- text-align:left;line-height:2.1;color:#f1dff0;
- font-size:13px;
+ text-align:left;line-height:2.1;
+ font-size:14px;color:#f4e4f1;
 }
-.letter p{margin-bottom:17px}
+.letter p{margin-bottom:16px}
 .signature{
- font-family:'Dancing Script',cursive;
- font-size:29px;color:#ffc8e6;text-align:right;
+ text-align:right;font-size:22px;
+ color:#ffc7e7;font-family:'Tiro Devanagari Marathi',serif;
 }
-.gift-icon{font-size:55px;margin:10px}
-#giftMessage{display:none;margin-top:25px;animation:show 1s ease}
-@keyframes show{
- from{opacity:0;transform:translateY(25px)}
+#surprise{display:none;margin-top:25px;animation:appear 1s ease}
+@keyframes appear{
+ from{opacity:0;transform:translateY(20px)}
  to{opacity:1;transform:translateY(0)}
 }
-#giftMessage h2{font-size:43px}
-#giftMessage p{font-size:14px;line-height:2;color:#f5e2f2}
-.footer{padding:45px 15px;text-align:center;color:#d9b9d8;font-size:11px}
-.floating{
+#surprise h2{font-size:38px}
+#surprise p{line-height:2;color:#f5e1f1;font-size:14px}
+.footer{
+ padding:40px 15px;text-align:center;
+ color:#dfbfdf;font-size:12px;line-height:2;
+}
+.float{
  position:fixed;bottom:-40px;pointer-events:none;z-index:99;
- animation:floatUp linear forwards;
+ animation:up linear forwards;
 }
-@keyframes floatUp{
- to{transform:translateY(-115vh) rotate(360deg);opacity:0}
+@keyframes up{
+ to{transform:translateY(-110vh) rotate(360deg);opacity:0}
 }
-.sparkle{color:#ffd5ed;font-size:20px}
-.divider{
- width:65px;height:1px;background:#e9a8d4;
- margin:25px auto;
-}
+.divider{height:1px;width:65px;background:#e9a8d4;margin:20px auto}
 @media(max-width:380px){
- .photo img{height:190px}
- h2{font-size:40px}
- .glass{padding:25px 16px}
+ .photo img{height:185px}
+ h2{font-size:31px}
 }
 </style>
 </head>
 
 <body>
 
-<!-- WELCOME -->
+<!-- सुरुवात -->
 <section class="hero">
- <div class="hero-heart">♡</div>
- <p class="eyebrow">A LITTLE WORLD MADE JUST FOR YOU</p>
- <h1>Hey, Pratuu!</h1>
+ <div class="heart">❤️</div>
+ <p class="eyebrow">♡ फक्त माझ्या बाळासाठी ♡</p>
+ <h1>अगं माझ्या बाळा…</h1>
+ <h2 style="font-size:27px;margin:12px 0">तुझ्यासाठी काहीतरी खास आहे बघ! 😘</h2>
  <p>
-  Somewhere between ordinary days and unexpected smiles,
-  you became someone very special.
-  So I made this little universe just for you. 🌙
+  एकदा उघडून तर बघ…<br>
+  तुझ्यासाठी खूप काही लपवलंय.<br>
+  आणि हो, शेवटपर्यंत नक्की बघायचं हं! 🥹
  </p>
- <button class="btn" onclick="goTo('birthday')">ENTER YOUR WORLD ✨</button>
- <p class="sparkle">Scroll down, beautiful ↓</p>
+ <button class="btn" onclick="go('birthday')">चल बघूया ❤️</button>
+ <p>खाली अजून सरप्राइज आहेत ↓</p>
 </section>
 
-<!-- COUNTDOWN -->
+<!-- वाढदिवस -->
 <section id="birthday">
- <p class="eyebrow">THE DAY THE WORLD GOT MORE BEAUTIFUL</p>
- <h2>It's Your Day! 🎂</h2>
+ <p class="eyebrow">तो खास दिवस...</p>
+ <h2>माझ्या बाळाचा वाढदिवस 🎂</h2>
  <div class="glass">
-  <p class="subtext" style="margin-top:0">COUNTING DOWN TO YOUR SPECIAL DAY</p>
+  <p class="sub" style="margin-top:0">तुझ्या खास दिवसाची आतुरतेने वाट पाहतोय...</p>
   <div class="countdown" id="countdown">
-   <div class="time"><strong id="days">00</strong><small>DAYS</small></div>
-   <div class="time"><strong id="hours">00</strong><small>HOURS</small></div>
-   <div class="time"><strong id="minutes">00</strong><small>MINUTES</small></div>
-   <div class="time"><strong id="seconds">00</strong><small>SECONDS</small></div>
+   <div class="time"><strong id="days">00</strong><small>दिवस</small></div>
+   <div class="time"><strong id="hours">00</strong><small>तास</small></div>
+   <div class="time"><strong id="minutes">00</strong><small>मिनिटं</small></div>
+   <div class="time"><strong id="seconds">00</strong><small>सेकंद</small></div>
   </div>
-  <p class="subtext">A special day for my favourite girl. ❤️</p>
+  <p class="sub">कारण हा दिवस माझ्यासाठीसुद्धा खूप खास आहे. ❤️</p>
  </div>
 </section>
 
-<!-- PHOTOS -->
-<section id="memories">
- <p class="eyebrow">A FACE THAT MAKES MY DAY</p>
- <h2>Your Little Gallery 📸</h2>
+<!-- फोटो -->
+<section>
+ <p class="eyebrow">माझ्या आवडत्या व्यक्तीचे क्षण</p>
+ <h2>माझी सुंदर परी 📸</h2>
  <div class="gallery">
-
   <div class="photo">
-   <img src="Snapchat-1576273468.jpg" alt="Pratuu's photo">
-   <p>Your beautiful smile</p>
+   <img src="Snapchat-1576273468.jpg" alt="तुझा फोटो">
+   <p>तुझं गोड हसू ❤️</p>
   </div>
-
   <div class="photo">
-   <img src="Snapchat-543809548.jpg" alt="Pratuu's photo">
-   <p>My favourite girl</p>
+   <img src="Snapchat-543809548.jpg" alt="तुझा फोटो">
+   <p>माझी आवडती व्यक्ती 🦋</p>
   </div>
-
   <div class="photo">
-   <img src="Snapchat-1632423022.jpg" alt="Pratuu's photo">
-   <p>Simply magical</p>
+   <img src="Snapchat-1632423022.jpg" alt="तुझा फोटो">
+   <p>एकदम परीसारखी 🌸</p>
   </div>
-
   <div class="photo">
-   <img src="Snapchat-2018473043.jpg" alt="Pratuu's photo">
-   <p>One of a kind</p>
+   <img src="Snapchat-2018473043.jpg" alt="तुझा फोटो">
+   <p>माझं छोटंसं जग 💗</p>
   </div>
-
  </div>
- <p class="subtext">Four pictures, countless reasons to smile. 🦋</p>
+ <p class="sub">तुझे फोटो बघताना वेळ कसा जातो कळतच नाही. 🥹</p>
 </section>
 
-<!-- LOVE LETTER -->
+<!-- प्रेमपत्र -->
 <section>
- <p class="eyebrow">SOME WORDS FROM MY HEART</p>
- <h2>For You, My Love 💌</h2>
+ <p class="eyebrow">मनातल्या काही गोष्टी...</p>
+ <h2>माझ्या बाळासाठी एक पत्र 💌</h2>
  <div class="glass letter">
-  <p>Dear Pratuu, ❤️</p>
+  <p>अगं माझ्या बाळा... ❤️</p>
   <p>
-   I may not always find the perfect words,
-   but I hope you always know how special you are to me.
+   खरं सांगू का, तुला काय लिहावं हेच कधी कधी समजत नाही.
+   कारण तू माझ्यासाठी किती खास आहेस हे शब्दांत सांगणं
+   थोडंसं कठीण आहे.
   </p>
   <p>
-   Your smile, your cute little talks, your nakhre,
-   and even the silly moments — somehow, all of them
-   make my days a little more beautiful.
+   तुझं हसणं, तुझं बोलणं, तुझे छोटे छोटे नखरे,
+   आणि माझी फिरकी घेण्याची तुझी सवय...
+   या सगळ्या गोष्टी मला खूप आवडतात. 😁
   </p>
   <p>
-   I don't promise a perfect world,
-   but I promise to keep finding little reasons
-   to make you smile.
+   कधी तू रागावतेस, कधी हसवतेस,
+   कधी विनाकारण त्रास देतेस...
+   पण तरीही तुझ्याशी बोलल्याशिवाय दिवस पूर्ण झाल्यासारखा वाटत नाही.
   </p>
   <p>
-   On your birthday, I wish you happiness that never ends,
-   dreams that come true, and a life full of beautiful surprises.
+   तुझ्या आयुष्यात खूप आनंद यावा,
+   तुझी प्रत्येक इच्छा पूर्ण व्हावी,
+   आणि तुझ्या चेहऱ्यावरचं हसू असंच कायम राहावं,
+   हीच मनापासून इच्छा आहे.
   </p>
   <p>
-   And whenever life gets difficult,
-   I hope you remember that someone is always cheering for you.
+   आणि हो, कितीही मोठी झालीस तरी
+   अशीच गोड, वेडी आणि खोडकर राहायचं! 😘
   </p>
-  <p class="signature">Your favourite person ❤️</p>
+  <p class="signature">तुझाच एक वेडा ❤️</p>
  </div>
 </section>
 
-<!-- SECRET GIFT -->
+<!-- गुपित भेट -->
 <section>
- <p class="eyebrow">WAIT... THERE'S ONE MORE THING</p>
- <h2>A Secret For You 🎁</h2>
+ <p class="eyebrow">अजून एक गोष्ट बाकी आहे...</p>
+ <h2>तुझ्यासाठी एक छोटीशी भेट 🎁</h2>
  <div class="glass">
-  <div class="gift-icon">🎁</div>
-  <p class="subtext" style="margin:10px 0 22px">
-   I kept one little surprise hidden here.
-   Only you can open it...
+  <div style="font-size:55px">🎁</div>
+  <p class="sub">
+   अगं, ही भेट उघडण्याआधी एकदा हसून दाखव बरं! 😁
   </p>
-  <button class="btn" onclick="openGift()">OPEN YOUR GIFT 💗</button>
+  <button class="btn" onclick="openSurprise()">इथे क्लिक कर बघू 😘</button>
 
-  <div id="giftMessage">
+  <div id="surprise">
    <div class="divider"></div>
-   <p class="eyebrow">MY ONE AND ONLY WISH</p>
-   <h2>Happy Birthday,<br>Pratuu! ❤️</h2>
+   <h2>वाढदिवसाच्या खूप खूप शुभेच्छा माझ्या बाळा! ❤️</h2>
    <p>
-    If I could gift you one thing in this whole world,
-    it would be the ability to see yourself through my eyes.
+    अगं वेडे, तुला या जगातलं सगळं सुख मिळावं.
+    तुझ्या प्रत्येक स्वप्नाला सुंदर पंख मिळावेत.
     <br><br>
-    Then you would know how precious, beautiful
-    and special you truly are.
+    आयुष्याच्या प्रत्येक वळणावर तुला आनंद भेटावा,
+    तुझ्या चेहऱ्यावरचं हसू कधीच कमी होऊ नये.
     <br><br>
-    Keep smiling, my princess.
-    May your world always be filled with love,
-    laughter and magic. 🦋
+    आणि एक गोष्ट लक्षात ठेव...
+    तू आहेस तशीच खूप खास आहेस.
+    कधी स्वतःची किंमत कमी समजू नकोस.
+    <br><br>
+    खूप खूप प्रेम माझ्या परी! 🥹😘
    </p>
-   <div style="font-size:38px;margin-top:20px">🌷 💖 🌙</div>
-   <p class="signature" style="margin-top:20px">Made only for you.</p>
+   <div style="font-size:42px;margin-top:20px">🌷🦋💗🎂</div>
+   <p class="signature" style="margin-top:20px">फक्त तुझ्यासाठी ❤️</p>
   </div>
  </div>
 </section>
 
 <div class="footer">
- Made with lots of love, just for Pratuu ❤️
- <br><br>
- A little universe. A million feelings.
+ माझ्या बाळासाठी, खूप साऱ्या प्रेमाने ❤️
+ <br>
+ ही छोटीशी दुनिया फक्त तुझीच आहे. 🦋
 </div>
 
 <script>
-function goTo(id){
+function go(id){
  document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
 
 const birthday = new Date("December 22, 2026 00:00:00").getTime();
 
 function updateCountdown(){
- const now = Date.now();
- const diff = birthday - now;
+ const diff = birthday - Date.now();
 
  if(diff <= 0){
   document.getElementById("countdown").innerHTML =
-  "<h2 style='font-size:30px'>HAPPY BIRTHDAY! 🎂❤️</h2>";
+  "<h2 style='font-size:27px'>वाढदिवसाच्या शुभेच्छा! 🎂❤️</h2>";
   return;
  }
 
  document.getElementById("days").textContent =
- Math.floor(diff / 86400000);
+ Math.floor(diff/86400000);
  document.getElementById("hours").textContent =
- Math.floor((diff % 86400000) / 3600000);
+ Math.floor((diff%86400000)/3600000);
  document.getElementById("minutes").textContent =
- Math.floor((diff % 3600000) / 60000);
+ Math.floor((diff%3600000)/60000);
  document.getElementById("seconds").textContent =
- Math.floor((diff % 60000) / 1000);
+ Math.floor((diff%60000)/1000);
 }
 updateCountdown();
 setInterval(updateCountdown,1000);
 
-function floatHeart(){
- const el = document.createElement("div");
- const symbols = ["♡","♥","🦋","✦","🌸"];
- el.className = "floating";
- el.textContent = symbols[Math.floor(Math.random()*symbols.length)];
- el.style.left = Math.random()*100+"vw";
- el.style.fontSize = (16+Math.random()*22)+"px";
- el.style.color = "#ffc8e8";
- el.style.animationDuration = (5+Math.random()*5)+"s";
+function floatLove(){
+ const el=document.createElement("div");
+ const symbols=["❤️","💕","🦋","🌸","✨","💗"];
+ el.className="float";
+ el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ el.style.left=Math.random()*100+"vw";
+ el.style.fontSize=(17+Math.random()*20)+"px";
+ el.style.animationDuration=(5+Math.random()*5)+"s";
  document.body.appendChild(el);
  setTimeout(()=>el.remove(),10000);
 }
-setInterval(floatHeart,900);
+setInterval(floatLove,850);
 
-function openGift(){
- const box = document.getElementById("giftMessage");
- box.style.display = "block";
- for(let i=0;i<45;i++){
-  setTimeout(floatHeart,i*90);
+function openSurprise(){
+ document.getElementById("surprise").style.display="block";
+ for(let i=0;i<40;i++){
+  setTimeout(floatLove,i*100);
  }
- setTimeout(()=>box.scrollIntoView({behavior:"smooth",block:"center"}),100);
+ setTimeout(()=>{
+  document.getElementById("surprise").scrollIntoView({
+   behavior:"smooth",block:"center"
+  });
+ },100);
 }
 </script>
-
 </body>
 </html>
