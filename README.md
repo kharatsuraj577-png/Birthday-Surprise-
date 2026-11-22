@@ -310,5 +310,137 @@ function openSurprise(){
  },100);
 }
 </script>
+
+<!-- MY HEART TO YOU ❤️ -->
+<section class="my-love-letter">
+  <div class="letter-heart">💌</div>
+
+  <h2>माझ्या बाळासाठी… ❤️</h2>
+  <p class="letter-subtitle">मनातलं थोडंसं… 🥹</p>
+
+  <div class="letter-paper">
+    <p>बाळा, ऐक ना… एक सांगू? 🥹</p>
+
+    <p>
+      माझं तुझ्यावर किती प्रेम आहे, ते मी तुला
+      शब्दांत सांगू शकत नाही. पण जेवढं काही आहे,
+      ते सगळं तुझ्यावरच आहे आणि कायमस्वरूपी राहणार.
+    </p>
+
+    <p>
+      मी प्रॉमिस देतो तुला, मी तुला कधीच Hurt
+      करणार नाही. फक्त माझी एकच इच्छा आहे,
+      तू मला कधीच एकटं सोडू नकोस.
+    </p>
+
+    <p>
+      तुला खूप सुखी ठेवण्यासाठी माझ्याकडून
+      जेवढं होईल तेवढं करण्याचा मी नेहमी प्रयत्न करेन.
+      काय माझं नशीब, देवाने तुला माझ्यासोबत जोडलं! ❤️
+    </p>
+
+    <p>
+      त्या देवाकडे पण माझी एकच मागणी आहे…
+      जसं आपल्याला जोडलं, तसंच शेवटपर्यंत
+      आपल्याला एकमेकांसोबत ठेव. 🥹
+    </p>
+
+    <p>
+      आज मी खूप खुश आहे, कारण आज माझ्या
+      लाडक्या बायकोचा Birthday आहे! 😘
+    </p>
+
+    <p>
+      आणि शेवटी परत एकदा माझ्या बायकोला
+      माझ्याकडून वाढदिवसाच्या खूप खूप शुभेच्छा!
+      तू कायम खुश राहा. 😘🩷
+    </p>
+
+    <h3>आणि हो… 😅</h3>
+    <p class="last-line">
+      असाच माझ्यासोबत भांडत रहा! 😅😘
+    </p>
+
+    <div class="signature">
+      फक्त तुझाच… ❤️
+    </div>
+  </div>
+
+  <div class="letter-footer">Forever & Always ♾️</div>
+</section>
+
+<style>
+.my-love-letter {
+  margin: 35px 15px;
+  padding: 28px 16px;
+  text-align: center;
+  border-radius: 28px;
+  background: linear-gradient(145deg,#ffe1ed,#eee0ff,#fff0f5);
+  box-shadow: 0 8px 30px rgba(190,80,140,.2);
+  color: #85264f;
+}
+
+.letter-heart {
+  font-size: 55px;
+  animation: letterBeat 1.4s infinite;
+}
+
+.my-love-letter h2 {
+  font-size: 27px;
+  margin: 12px 0 5px;
+}
+
+.letter-subtitle {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.letter-paper {
+  margin-top: 25px;
+  padding: 25px 19px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.85);
+  box-shadow: 0 5px 18px rgba(120,50,90,.12);
+  text-align: left;
+  line-height: 2;
+}
+
+.letter-paper p {
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+
+.letter-paper h3 {
+  text-align: center;
+  color: #d63384;
+  font-size: 23px;
+}
+
+.last-line {
+  text-align: center;
+  font-size: 19px !important;
+  font-weight: bold;
+  color: #d63384;
+}
+
+.signature {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.letter-footer {
+  margin-top: 22px;
+  font-size: 19px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+@keyframes letterBeat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+</style>
 </body>
 </html>
