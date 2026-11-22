@@ -324,43 +324,41 @@ h2 {
 <!-- GALLERY -->
 <section>
 
-    <p class="small-text">MY FAVOURITE LITTLE MOMENTS</p>
 
+<!-- GALLERY -->
+<section>
+    <p class="small-text">MY FAVOURITE LITTLE MOMENTS</p>
     <h2>Your Beautiful Memories 📸</h2>
 
     <div class="gallery">
 
         <div class="photo-card">
-            <div class="placeholder">
-                🌸
-                <small>YOUR PHOTO HERE</small>
-            </div>
-            <p>Your beautiful smile</p>
+            <img src="Snapchat-1576273468.jpg" alt="Beautiful memory">
+            <p>Your beautiful smile ❤️</p>
         </div>
 
         <div class="photo-card">
-            <div class="placeholder">
-                🦋
-                <small>YOUR PHOTO HERE</small>
-            </div>
-            <p>My favourite girl</p>
+            <img src="Snapchat-543809548.jpg" alt="Beautiful memory">
+            <p>My favourite girl 🦋</p>
         </div>
 
         <div class="photo-card">
-            <div class="placeholder">
-                💗
-                <small>YOUR PHOTO HERE</small>
-            </div>
-            <p>Simply magical</p>
+            <img src="Snapchat-1632423022.jpg" alt="Beautiful memory">
+            <p>Simply magical 🌸</p>
         </div>
 
         <div class="photo-card">
-            <div class="placeholder">
-                🌷
-                <small>YOUR PHOTO HERE</small>
-            </div>
-            <p>My pretty princess</p>
+            <img src="Snapchat-2018473043.jpg" alt="Beautiful memory">
+            <p>My pretty princess 💗</p>
         </div>
+
+    </div>
+
+    <p style="margin-top:25px;color:#f6dff5;font-size:13px;">
+        Every picture of you deserves its own little universe. ❤️
+    </p>
+</section>
+
 
 </div>
 
