@@ -859,6 +859,140 @@ document.addEventListener("DOMContentLoaded", function () {
 
 @keyframes wishAppear {
   from { opacity: 0; transform: scale(.8); }
+  to { opacity: 1; transform: scale(1);}
+
+@keyframes fireworkPop {
+  0% { opacity: 0; transform: scale(.3) translateY(0); }
+  20% { opacity: 1; transform: scale(1.4) translateY(-20px); }
+  100% { opacity: 0; transform: scale(.8) translateY(-180px) rotate(180deg); }
+}
+</style>
+
+
+<!-- BIRTHDAY CAKE SURPRISE 🎂 -->
+
+<section class="birthday-cake-section">
+  <div class="cake-heading">आता तुझ्यासाठी अजून एक Surprise! 🎀</div>
+
+  <p>माझ्या बाळा, हा केक कापशील का? 🥹</p>
+
+  <button id="birthdayCake" aria-label="Birthday cake">
+    <span class="cake-candle">🕯️</span>
+    <span class="cake-emoji">🎂</span>
+    <span class="cake-hint">माझ्यावर क्लिक कर ❤️</span>
+  </button>
+
+  <div id="birthdayWish" hidden>
+    <h2>Happy Birthday Pratuu! 🎉</h2>
+    <div class="birthday-rose">🌹🌸🌹</div>
+
+    <p>
+      आजचा दिवस तुझ्यासारखाच सुंदर जावो.
+      तुझ्या चेहऱ्यावरचं हसू कधीच कमी होऊ नये.
+      तुझी प्रत्येक इच्छा पूर्ण होवो.
+    </p>
+
+    <h3>खूप खूप प्रेम माझ्या बायको! 😘🩷</h3>
+    <div class="birthday-forever">तुझाच… आज, उद्या आणि कायम! ❤️</div>
+  </div>
+</section>
+
+<style>
+.birthday-cake-section {
+  margin: 35px 15px;
+  padding: 30px 18px;
+  text-align: center;
+  border-radius: 28px;
+  background: linear-gradient(145deg,#ffe0ec,#eadfff,#fff1f5);
+  color: #92245c;
+  box-shadow: 0 8px 28px rgba(180,70,130,.2);
+}
+
+.cake-heading {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.birthday-cake-section p {
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+#birthdayCake {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 12px;
+  color: #92245c;
+}
+
+.cake-emoji {
+  font-size: 100px;
+  animation: cakeBounce 1.5s infinite ease-in-out;
+}
+
+.cake-candle {
+  font-size: 32px;
+  margin-bottom: -8px;
+}
+
+.cake-hint {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+#birthdayWish {
+  margin-top: 22px;
+  padding: 20px 12px;
+  background: rgba(255,255,255,.8);
+  border-radius: 20px;
+  animation: wishAppear 1s ease;
+}
+
+#birthdayWish[hidden] {
+  display: none;
+}
+
+#birthdayWish h2 {
+  color: #d63384;
+  font-size: 25px;
+}
+
+#birthdayWish h3 {
+  color: #d63384;
+  line-height: 1.7;
+}
+
+.birthday-rose {
+  font-size: 35px;
+}
+
+.birthday-forever {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cake-firework {
+  position: fixed;
+  z-index: 10000;
+  pointer-events: none;
+  top: var(--top);
+  left: var(--left);
+  font-size: 28px;
+  animation: fireworkPop 2.5s ease-out forwards;
+}
+
+@keyframes cakeBounce {
+  0%,100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes wishAppear {
+  from { opacity: 0; transform: scale(.8); }
   to { opacity: 1; transform: scale(1); }
 }
 
@@ -902,6 +1036,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-</script>
+
 </body>
 </html>
