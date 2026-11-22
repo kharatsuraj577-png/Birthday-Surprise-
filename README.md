@@ -442,5 +442,168 @@ function openSurprise(){
   50% { transform: scale(1.18); }
 }
 </style>
+
+<!-- SECRET SURPRISE FOR PRATUU 🥹❤️ -->
+
+<section class="secret-love">
+  <div class="secret-icon">🦋</div>
+
+  <h2>बाळा, तुझ्यासाठी एक छोटंसं Surprise! ❤️</h2>
+
+  <p>माझ्यासाठी एकदा डोळे बंद कर ना… 🥹</p>
+
+  <button id="secretLoveBtn">
+    इथे क्लिक कर माझ्या बाळा 💗
+  </button>
+
+  <div id="secretLoveMessage" hidden>
+    <div class="surprise-heart">💖</div>
+
+    <h2>आता डोळे उघड! 😘</h2>
+
+    <p>
+      तुझ्यासाठी माझं संपूर्ण जग इथे आहे…
+      आणि त्या जगातली सर्वात सुंदर गोष्ट म्हणजे तू! 🥹
+    </p>
+
+    <h3>तू आहेस म्हणून माझं जग सुंदर आहे! ❤️</h3>
+
+    <p>खूप खूप प्रेम करतो तुझ्यावर, माझ्या बायको! 😘🩷</p>
+
+    <div class="surprise-end">Forever Mine ♾️</div>
+  </div>
+</section>
+
+<style>
+.secret-love {
+  margin: 35px 15px;
+  padding: 30px 18px;
+  text-align: center;
+  border-radius: 28px;
+  background: linear-gradient(140deg,#ffe0ed,#e9dcff,#fff0f5);
+  color: #92245c;
+  box-shadow: 0 8px 28px rgba(180,70,130,.2);
+}
+
+.secret-icon {
+  font-size: 55px;
+  animation: butterflyFloat 2s infinite ease-in-out;
+}
+
+.secret-love h2 {
+  font-size: 23px;
+}
+
+.secret-love p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#secretLoveBtn {
+  border: none;
+  border-radius: 30px;
+  padding: 15px 23px;
+  margin: 15px 0;
+  background: linear-gradient(120deg,#ff5c9a,#bd69db);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px #e8a0ca;
+  cursor: pointer;
+}
+
+#secretLoveMessage {
+  margin-top: 25px;
+  padding: 22px 12px;
+  background: rgba(255,255,255,.75);
+  border-radius: 20px;
+  animation: revealLove 1.2s ease;
+}
+
+#secretLoveMessage[hidden] {
+  display: none;
+}
+
+.surprise-heart {
+  font-size: 65px;
+  animation: heartBeat 1s infinite;
+}
+
+#secretLoveMessage h3 {
+  line-height: 1.7;
+  color: #d63384;
+}
+
+.surprise-end {
+  margin-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.love-particle {
+  position: fixed;
+  top: 100vh;
+  left: var(--left);
+  z-index: 9999;
+  pointer-events: none;
+  font-size: 27px;
+  animation: flyLove var(--duration) ease-out forwards;
+}
+
+@keyframes butterflyFloat {
+  0%,100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-12px) rotate(8deg); }
+}
+
+@keyframes heartBeat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes revealLove {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes flyLove {
+  to {
+    transform: translateY(-120vh) translateX(var(--drift)) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("secretLoveBtn");
+  const message = document.getElementById("secretLoveMessage");
+
+  if (!button || !message) return;
+
+  button.addEventListener("click", function () {
+    message.hidden = false;
+    button.textContent = "माझं प्रेम फक्त तुझ्यासाठी! ❤️";
+
+    const symbols = ["💗", "💕", "🦋", "❤️", "🌸", "💖"];
+
+    for (let i = 0; i < 28; i++) {
+      const particle = document.createElement("div");
+      particle.className = "love-particle";
+      particle.textContent =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+      particle.style.setProperty("--left", Math.random() * 100 + "vw");
+      particle.style.setProperty("--drift", (Math.random() * 160 - 80) + "px");
+      particle.style.setProperty("--duration", (3 + Math.random() * 3) + "s");
+
+      document.body.appendChild(particle);
+
+      setTimeout(function () {
+        particle.remove();
+      }, 6500);
+    }
+  });
+});
+</script>
 </body>
 </html>
