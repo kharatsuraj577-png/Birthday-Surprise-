@@ -4,321 +4,276 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>माझ्या बाळासाठी ❤️</title>
+<title>For My Pratuu ❤️</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
- background:#180e25;color:#fff;
- font-family:'Noto Sans Devanagari',sans-serif;
- overflow-x:hidden;
+* {
+  box-sizing: border-box;
 }
-body:before{
- content:"";position:fixed;inset:0;z-index:-1;
- background:
- radial-gradient(circle at 15% 15%,#c34b9155,transparent 38%),
- radial-gradient(circle at 85% 75%,#7750b555,transparent 40%),
- linear-gradient(145deg,#180e25,#402044,#1b102c);
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background: linear-gradient(150deg,#fff0f6,#f4eaff,#ffe5ef);
+  color: #813052;
+  text-align: center;
+  overflow-x: hidden;
 }
-section{padding:75px 18px;text-align:center}
-.hero{
- min-height:100vh;display:flex;flex-direction:column;
- align-items:center;justify-content:center;padding:25px;
+
+section {
+  margin: 25px 14px;
+  padding: 28px 18px;
+  border-radius: 25px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 8px 28px rgba(180,70,130,.13);
 }
-.script{font-family:'Tiro Devanagari Marathi',serif}
-h1{
- font-family:'Tiro Devanagari Marathi',serif;
- font-size:clamp(38px,9vw,65px);
- color:#ffd0e8;line-height:1.5;
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg,#ffd8e9,#eadcff,#fff1f6);
+  margin: 0;
+  border-radius: 0 0 35px 35px;
+  padding: 35px 20px;
 }
-h2{
- font-family:'Tiro Devanagari Marathi',serif;
- font-size:36px;color:#ffd0e8;margin-bottom:23px;
+
+.hero-heart {
+  font-size: 65px;
+  animation: beat 1.3s infinite;
 }
-.eyebrow{
- color:#f2b6d8;font-size:11px;
- letter-spacing:2px;margin-bottom:18px;
+
+.hero h1 {
+  font-size: 34px;
+  line-height: 1.6;
+  color: #a52d69;
 }
-.hero p{
- max-width:340px;line-height:2;
- color:#f0d9ed;margin:20px 0;
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.9;
 }
-.heart{font-size:48px;animation:pulse 1.5s infinite}
-@keyframes pulse{50%{transform:scale(1.2)}}
-.btn{
- border:1px solid #ffc6e5;
- background:linear-gradient(120deg,#c65d9d,#8156b8);
- color:white;border-radius:40px;padding:14px 24px;
- font-family:inherit;font-size:14px;
- cursor:pointer;box-shadow:0 0 25px #d56eaa44;
+
+.small-note {
+  font-size: 13px;
+  opacity: .8;
 }
-.glass{
- max-width:540px;margin:auto;padding:28px 20px;
- border:1px solid #ffffff28;border-radius:24px;
- background:#ffffff0d;backdrop-filter:blur(12px);
- box-shadow:0 15px 45px #0003;
+
+h2 {
+  color: #a52d69;
+  font-size: 24px;
+  line-height: 1.6;
 }
-.countdown{
- display:flex;justify-content:center;gap:9px;flex-wrap:wrap;
+
+p {
+  font-size: 16px;
+  line-height: 1.9;
 }
-.time{
- min-width:67px;padding:14px 8px;
- border-radius:15px;background:#ffffff14;
+
+.count-number {
+  font-size: 35px;
+  font-weight: 800;
+  color: #d13d83;
 }
-.time strong{display:block;font-size:25px;color:#ffd0e9}
-.time small{font-size:10px;color:#e6c6e5}
-.sub{
- font-size:13px;line-height:2;color:#e8d3e8;
- margin-top:18px;
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
 }
-.gallery{
- display:grid;grid-template-columns:1fr 1fr;
- gap:13px;max-width:520px;margin:28px auto;
+
+.gallery img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 17px;
+  box-shadow: 0 5px 15px #e7b5d0;
 }
-.photo{
- overflow:hidden;border-radius:18px;
- background:#ffffff12;border:1px solid #ffffff25;
+
+.photo-caption {
+  font-size: 13px;
+  margin-top: 5px;
 }
-.photo img{
- display:block;width:100%;height:230px;object-fit:cover;
+
+.letter {
+  text-align: left;
+  padding: 23px 18px;
+  background: #fff9fc;
+  border-radius: 18px;
+  line-height: 2;
 }
-.photo p{
- padding:12px 5px;color:#ffd0e8;
- font-family:'Tiro Devanagari Marathi',serif;
- font-size:16px;
+
+.letter p {
+  margin-bottom: 16px;
 }
-.letter{
- text-align:left;line-height:2.1;
- font-size:14px;color:#f4e4f1;
+
+.signature {
+  text-align: right;
+  font-weight: bold;
+  font-size: 19px;
 }
-.letter p{margin-bottom:16px}
-.signature{
- text-align:right;font-size:22px;
- color:#ffc7e7;font-family:'Tiro Devanagari Marathi',serif;
+
+button {
+  font-family: inherit;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 23px;
+  background: linear-gradient(120deg,#ff5b9b,#bd65d9);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px #e7a4c9;
+  cursor: pointer;
+  margin: 12px 0;
 }
-#surprise{display:none;margin-top:25px;animation:appear 1s ease}
-@keyframes appear{
- from{opacity:0;transform:translateY(20px)}
- to{opacity:1;transform:translateY(0)}
+
+button:active {
+  transform: scale(.96);
 }
-#surprise h2{font-size:38px}
-#surprise p{line-height:2;color:#f5e1f1;font-size:14px}
-.footer{
- padding:40px 15px;text-align:center;
- color:#dfbfdf;font-size:12px;line-height:2;
+
+.hidden {
+  display: none !important;
 }
-.float{
- position:fixed;bottom:-40px;pointer-events:none;z-index:99;
- animation:up linear forwards;
+
+.surprise-card {
+  margin-top: 22px;
+  padding: 20px 13px;
+  border-radius: 20px;
+  background: #fff5fa;
+  animation: appear 1s ease;
 }
-@keyframes up{
- to{transform:translateY(-110vh) rotate(360deg);opacity:0}
+
+.big-heart {
+  font-size: 65px;
+  animation: beat 1s infinite;
 }
-.divider{height:1px;width:65px;background:#e9a8d4;margin:20px auto}
-@media(max-width:380px){
- .photo img{height:185px}
- h2{font-size:31px}
+
+.cake-button {
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto;
+  color: #a52d69;
+}
+
+.cake-emoji {
+  font-size: 100px;
+  animation: bounce 1.5s infinite;
+}
+
+.cake-hint {
+  font-size: 14px;
+}
+
+.final-message {
+  padding: 20px 10px;
+  border-radius: 18px;
+  background: #fff3f9;
+  animation: appear 1s ease;
+}
+
+.footer {
+  padding: 30px 15px 45px;
+  font-size: 15px;
+}
+
+.particle {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  top: 100vh;
+  left: var(--left);
+  font-size: 25px;
+  animation: fly var(--duration) ease-out forwards;
+}
+
+@keyframes beat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px) scale(.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fly {
+  to {
+    transform: translateY(-120vh) translateX(var(--drift)) rotate(360deg);
+    opacity: 0;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- सुरुवात -->
-<section class="hero">
- <div class="heart">❤️</div>
- <p class="eyebrow">♡ फक्त माझ्या बाळासाठी ♡</p>
- <h1>अगं माझ्या बाळा…</h1>
- <h2 style="font-size:27px;margin:12px 0">तुझ्यासाठी काहीतरी खास आहे बघ! 😘</h2>
- <p>
-  एकदा उघडून तर बघ…<br>
-  तुझ्यासाठी खूप काही लपवलंय.<br>
-  आणि हो, शेवटपर्यंत नक्की बघायचं हं! 🥹
- </p>
- <button class="btn" onclick="go('birthday')">चल बघूया ❤️</button>
- <p>खाली अजून सरप्राइज आहेत ↓</p>
+<!-- WELCOME -->
+<header class="hero">
+  <div class="hero-heart">💗</div>
+  <h1>अगं माझ्या बाळा… 🥹</h1>
+  <p>
+    तुझ्यासाठी काहीतरी खास आहे बघ! 😘<br>
+    आज फक्त तुझाच दिवस आहे, माझ्या राणी!
+  </p>
+  <p class="small-note">A little surprise made with lots of love ❤️</p>
+  <button onclick="goTo('countdown')">चला बघूया… 💕</button>
+</header>
+
+<!-- COUNTDOWN -->
+<section id="countdown">
+  <h2>तुझ्या खास दिवसाची उलटी गणती 🎂</h2>
+  <p>माझ्या प्रातूचा वाढदिवस येतोय! ❤️</p>
+  <div class="count-number" id="timer">Loading...</div>
+  <p>२२ डिसेंबर २०२६ 🥹</p>
 </section>
 
-<!-- वाढदिवस -->
-<section id="birthday">
- <p class="eyebrow">तो खास दिवस...</p>
- <h2>माझ्या बाळाचा वाढदिवस 🎂</h2>
- <div class="glass">
-  <p class="sub" style="margin-top:0">तुझ्या खास दिवसाची आतुरतेने वाट पाहतोय...</p>
-  <div class="countdown" id="countdown">
-   <div class="time"><strong id="days">00</strong><small>दिवस</small></div>
-   <div class="time"><strong id="hours">00</strong><small>तास</small></div>
-   <div class="time"><strong id="minutes">00</strong><small>मिनिटं</small></div>
-   <div class="time"><strong id="seconds">00</strong><small>सेकंद</small></div>
-  </div>
-  <p class="sub">कारण हा दिवस माझ्यासाठीसुद्धा खूप खास आहे. ❤️</p>
- </div>
-</section>
-
-<!-- फोटो -->
+<!-- PHOTO GALLERY -->
 <section>
- <p class="eyebrow">माझ्या आवडत्या व्यक्तीचे क्षण</p>
- <h2>माझी सुंदर परी 📸</h2>
- <div class="gallery">
-  <div class="photo">
-   <img src="Snapchat-1576273468.jpg" alt="तुझा फोटो">
-   <p>तुझं गोड हसू ❤️</p>
+  <h2>माझ्या आवडत्या चार फोटोंमधली तू… 😘</h2>
+  <p>प्रत्येक फोटोमध्ये माझं आवडतं जग दिसतं. ❤️</p>
+
+  <div class="gallery">
+    <div>
+      <img src="Snapchat-1576273468.jpg" alt="Pratuu photo 1">
+      <div class="photo-caption">माझं सुंदर हसू 💗</div>
+    </div>
+
+    <div>
+      <img src="Snapchat-543809548.jpg" alt="Pratuu photo 2">
+      <div class="photo-caption">माझी लाडकी 🥹</div>
+    </div>
+
+    <div>
+      <img src="Snapchat-1632423022.jpg" alt="Pratuu photo 3">
+      <div class="photo-caption">माझी राणी 👑</div>
+    </div>
+
+    <div>
+      <img src="Snapchat-2018473043.jpg" alt="Pratuu photo 4">
+      <div class="photo-caption">माझं छोटंसं जग ❤️</div>
+    </div>
   </div>
-  <div class="photo">
-   <img src="Snapchat-543809548.jpg" alt="तुझा फोटो">
-   <p>माझी आवडती व्यक्ती 🦋</p>
-  </div>
-  <div class="photo">
-   <img src="Snapchat-1632423022.jpg" alt="तुझा फोटो">
-   <p>एकदम परीसारखी 🌸</p>
-  </div>
-  <div class="photo">
-   <img src="Snapchat-2018473043.jpg" alt="तुझा फोटो">
-   <p>माझं छोटंसं जग 💗</p>
-  </div>
- </div>
- <p class="sub">तुझे फोटो बघताना वेळ कसा जातो कळतच नाही. 🥹</p>
 </section>
 
-<!-- प्रेमपत्र -->
+<!-- LOVE LETTER -->
 <section>
- <p class="eyebrow">मनातल्या काही गोष्टी...</p>
- <h2>माझ्या बाळासाठी एक पत्र 💌</h2>
- <div class="glass letter">
-  <p>अगं माझ्या बाळा... ❤️</p>
-  <p>
-   खरं सांगू का, तुला काय लिहावं हेच कधी कधी समजत नाही.
-   कारण तू माझ्यासाठी किती खास आहेस हे शब्दांत सांगणं
-   थोडंसं कठीण आहे.
-  </p>
-  <p>
-   तुझं हसणं, तुझं बोलणं, तुझे छोटे छोटे नखरे,
-   आणि माझी फिरकी घेण्याची तुझी सवय...
-   या सगळ्या गोष्टी मला खूप आवडतात. 😁
-  </p>
-  <p>
-   कधी तू रागावतेस, कधी हसवतेस,
-   कधी विनाकारण त्रास देतेस...
-   पण तरीही तुझ्याशी बोलल्याशिवाय दिवस पूर्ण झाल्यासारखा वाटत नाही.
-  </p>
-  <p>
-   तुझ्या आयुष्यात खूप आनंद यावा,
-   तुझी प्रत्येक इच्छा पूर्ण व्हावी,
-   आणि तुझ्या चेहऱ्यावरचं हसू असंच कायम राहावं,
-   हीच मनापासून इच्छा आहे.
-  </p>
-  <p>
-   आणि हो, कितीही मोठी झालीस तरी
-   अशीच गोड, वेडी आणि खोडकर राहायचं! 😘
-  </p>
-  <p class="signature">तुझाच एक वेडा ❤️</p>
- </div>
-</section>
+  <h2>माझ्या बाळासाठी एक पत्र… 💌</h2>
+  <p>मनातलं थोडंसं… 🥹</p>
 
-<!-- गुपित भेट -->
-<section>
- <p class="eyebrow">अजून एक गोष्ट बाकी आहे...</p>
- <h2>तुझ्यासाठी एक छोटीशी भेट 🎁</h2>
- <div class="glass">
-  <div style="font-size:55px">🎁</div>
-  <p class="sub">
-   अगं, ही भेट उघडण्याआधी एकदा हसून दाखव बरं! 😁
-  </p>
-  <button class="btn" onclick="openSurprise()">इथे क्लिक कर बघू 😘</button>
-
-  <div id="surprise">
-   <div class="divider"></div>
-   <h2>वाढदिवसाच्या खूप खूप शुभेच्छा माझ्या बाळा! ❤️</h2>
-   <p>
-    अगं वेडे, तुला या जगातलं सगळं सुख मिळावं.
-    तुझ्या प्रत्येक स्वप्नाला सुंदर पंख मिळावेत.
-    <br><br>
-    आयुष्याच्या प्रत्येक वळणावर तुला आनंद भेटावा,
-    तुझ्या चेहऱ्यावरचं हसू कधीच कमी होऊ नये.
-    <br><br>
-    आणि एक गोष्ट लक्षात ठेव...
-    तू आहेस तशीच खूप खास आहेस.
-    कधी स्वतःची किंमत कमी समजू नकोस.
-    <br><br>
-    खूप खूप प्रेम माझ्या परी! 🥹😘
-   </p>
-   <div style="font-size:42px;margin-top:20px">🌷🦋💗🎂</div>
-   <p class="signature" style="margin-top:20px">फक्त तुझ्यासाठी ❤️</p>
-  </div>
- </div>
-</section>
-
-<div class="footer">
- माझ्या बाळासाठी, खूप साऱ्या प्रेमाने ❤️
- <br>
- ही छोटीशी दुनिया फक्त तुझीच आहे. 🦋
-</div>
-
-<script>
-function go(id){
- document.getElementById(id).scrollIntoView({behavior:"smooth"});
-}
-
-const birthday = new Date("December 22, 2026 00:00:00").getTime();
-
-function updateCountdown(){
- const diff = birthday - Date.now();
-
- if(diff <= 0){
-  document.getElementById("countdown").innerHTML =
-  "<h2 style='font-size:27px'>वाढदिवसाच्या शुभेच्छा! 🎂❤️</h2>";
-  return;
- }
-
- document.getElementById("days").textContent =
- Math.floor(diff/86400000);
- document.getElementById("hours").textContent =
- Math.floor((diff%86400000)/3600000);
- document.getElementById("minutes").textContent =
- Math.floor((diff%3600000)/60000);
- document.getElementById("seconds").textContent =
- Math.floor((diff%60000)/1000);
-}
-updateCountdown();
-setInterval(updateCountdown,1000);
-
-function floatLove(){
- const el=document.createElement("div");
- const symbols=["❤️","💕","🦋","🌸","✨","💗"];
- el.className="float";
- el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
- el.style.left=Math.random()*100+"vw";
- el.style.fontSize=(17+Math.random()*20)+"px";
- el.style.animationDuration=(5+Math.random()*5)+"s";
- document.body.appendChild(el);
- setTimeout(()=>el.remove(),10000);
-}
-setInterval(floatLove,850);
-
-function openSurprise(){
- document.getElementById("surprise").style.display="block";
- for(let i=0;i<40;i++){
-  setTimeout(floatLove,i*100);
- }
- setTimeout(()=>{
-  document.getElementById("surprise").scrollIntoView({
-   behavior:"smooth",block:"center"
-  });
- },100);
-}
-</script>
-
-<!-- MY HEART TO YOU ❤️ -->
-<section class="my-love-letter">
-  <div class="letter-heart">💌</div>
-
-  <h2>माझ्या बाळासाठी… ❤️</h2>
-  <p class="letter-subtitle">मनातलं थोडंसं… 🥹</p>
-
-  <div class="letter-paper">
+  <div class="letter">
     <p>बाळा, ऐक ना… एक सांगू? 🥹</p>
 
     <p>
@@ -356,686 +311,140 @@ function openSurprise(){
       तू कायम खुश राहा. 😘🩷
     </p>
 
-    <h3>आणि हो… 😅</h3>
-    <p class="last-line">
+    <h3 style="text-align:center;color:#d63384">
+      आणि हो… 😅
+    </h3>
+
+    <p style="text-align:center;font-weight:bold;color:#d63384">
       असाच माझ्यासोबत भांडत रहा! 😅😘
     </p>
 
-    <div class="signature">
-      फक्त तुझाच… ❤️
-    </div>
+    <div class="signature">फक्त तुझाच… ❤️</div>
   </div>
-
-  <div class="letter-footer">Forever & Always ♾️</div>
 </section>
 
-<style>
-.my-love-letter {
-  margin: 35px 15px;
-  padding: 28px 16px;
-  text-align: center;
-  border-radius: 28px;
-  background: linear-gradient(145deg,#ffe1ed,#eee0ff,#fff0f5);
-  box-shadow: 0 8px 30px rgba(190,80,140,.2);
-  color: #85264f;
-}
-
-.letter-heart {
-  font-size: 55px;
-  animation: letterBeat 1.4s infinite;
-}
-
-.my-love-letter h2 {
-  font-size: 27px;
-  margin: 12px 0 5px;
-}
-
-.letter-subtitle {
-  font-size: 15px;
-  font-style: italic;
-}
-
-.letter-paper {
-  margin-top: 25px;
-  padding: 25px 19px;
-  border-radius: 18px;
-  background: rgba(255,255,255,.85);
-  box-shadow: 0 5px 18px rgba(120,50,90,.12);
-  text-align: left;
-  line-height: 2;
-}
-
-.letter-paper p {
-  font-size: 16px;
-  margin-bottom: 17px;
-}
-
-.letter-paper h3 {
-  text-align: center;
-  color: #d63384;
-  font-size: 23px;
-}
-
-.last-line {
-  text-align: center;
-  font-size: 19px !important;
-  font-weight: bold;
-  color: #d63384;
-}
-
-.signature {
-  text-align: right;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 25px;
-}
-
-.letter-footer {
-  margin-top: 22px;
-  font-size: 19px;
-  font-style: italic;
-  letter-spacing: 2px;
-}
-
-@keyframes letterBeat {
-  0%,100% { transform: scale(1); }
-  50% { transform: scale(1.18); }
-}
-</style>
-
-<!-- SECRET SURPRISE FOR PRATUU 🥹❤️ -->
-
-<section class="secret-love">
-  <div class="secret-icon">🦋</div>
-
+<!-- SECRET SURPRISE -->
+<section>
+  <div style="font-size:50px">🦋</div>
   <h2>बाळा, तुझ्यासाठी एक छोटंसं Surprise! ❤️</h2>
-
   <p>माझ्यासाठी एकदा डोळे बंद कर ना… 🥹</p>
 
-  <button id="secretLoveBtn">
-    इथे क्लिक कर माझ्या बाळा 💗
-  </button>
+  <button id="secretBtn">इथे क्लिक कर माझ्या बाळा 💗</button>
 
-  <div id="secretLoveMessage" hidden>
-    <div class="surprise-heart">💖</div>
-
+  <div id="secretMessage" class="surprise-card hidden">
+    <div class="big-heart">💖</div>
     <h2>आता डोळे उघड! 😘</h2>
-
     <p>
       तुझ्यासाठी माझं संपूर्ण जग इथे आहे…
       आणि त्या जगातली सर्वात सुंदर गोष्ट म्हणजे तू! 🥹
     </p>
-
     <h3>तू आहेस म्हणून माझं जग सुंदर आहे! ❤️</h3>
-
     <p>खूप खूप प्रेम करतो तुझ्यावर, माझ्या बायको! 😘🩷</p>
-
-    <div class="surprise-end">Forever Mine ♾️</div>
+    <p>Forever Mine ♾️</p>
   </div>
 </section>
 
-<style>
-.secret-love {
-  margin: 35px 15px;
-  padding: 30px 18px;
-  text-align: center;
-  border-radius: 28px;
-  background: linear-gradient(140deg,#ffe0ed,#e9dcff,#fff0f5);
-  color: #92245c;
-  box-shadow: 0 8px 28px rgba(180,70,130,.2);
-}
+<!-- BIRTHDAY CAKE -->
+<section>
+  <h2>आता तुझ्यासाठी अजून एक Surprise! 🎀</h2>
+  <p>माझ्या बाळा, हा केक कापशील का? 🥹</p>
 
-.secret-icon {
-  font-size: 55px;
-  animation: butterflyFloat 2s infinite ease-in-out;
-}
-
-.secret-love h2 {
-  font-size: 23px;
-}
-
-.secret-love p {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-#secretLoveBtn {
-  border: none;
-  border-radius: 30px;
-  padding: 15px 23px;
-  margin: 15px 0;
-  background: linear-gradient(120deg,#ff5c9a,#bd69db);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  box-shadow: 0 5px 15px #e8a0ca;
-  cursor: pointer;
-}
-
-#secretLoveMessage {
-  margin-top: 25px;
-  padding: 22px 12px;
-  background: rgba(255,255,255,.75);
-  border-radius: 20px;
-  animation: revealLove 1.2s ease;
-}
-
-#secretLoveMessage[hidden] {
-  display: none;
-}
-
-.surprise-heart {
-  font-size: 65px;
-  animation: heartBeat 1s infinite;
-}
-
-#secretLoveMessage h3 {
-  line-height: 1.7;
-  color: #d63384;
-}
-
-.surprise-end {
-  margin-top: 20px;
-  font-size: 20px;
-  font-style: italic;
-}
-
-.love-particle {
-  position: fixed;
-  top: 100vh;
-  left: var(--left);
-  z-index: 9999;
-  pointer-events: none;
-  font-size: 27px;
-  animation: flyLove var(--duration) ease-out forwards;
-}
-
-@keyframes butterflyFloat {
-  0%,100% { transform: translateY(0) rotate(-8deg); }
-  50% { transform: translateY(-12px) rotate(8deg); }
-}
-
-@keyframes heartBeat {
-  0%,100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-}
-
-@keyframes revealLove {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes flyLove {
-  to {
-    transform: translateY(-120vh) translateX(var(--drift)) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-<!-- SECRET SURPRISE FOR PRATUU 🥹❤️ -->
-
-<section class="secret-love">
-  <div class="secret-icon">🦋</div>
-
-  <h2>बाळा, तुझ्यासाठी एक छोटंसं Surprise! ❤️</h2>
-
-  <p>माझ्यासाठी एकदा डोळे बंद कर ना… 🥹</p>
-
-  <button id="secretLoveBtn">
-    इथे क्लिक कर माझ्या बाळा 💗
+  <button class="cake-button" id="cakeBtn">
+    <span style="font-size:32px">🕯️</span>
+    <span class="cake-emoji">🎂</span>
+    <span class="cake-hint">माझ्यावर क्लिक कर ❤️</span>
   </button>
 
-  <div id="secretLoveMessage" hidden>
-    <div class="surprise-heart">💖</div>
-
-    <h2>आता डोळे उघड! 😘</h2>
-
+  <div id="birthdayWish" class="final-message hidden">
+    <div class="big-heart">🎉💖🎉</div>
+    <h2>Happy Birthday Pratuu! 🎂</h2>
+    <div style="font-size:35px">🌹🌸🌹</div>
     <p>
-      तुझ्यासाठी माझं संपूर्ण जग इथे आहे…
-      आणि त्या जगातली सर्वात सुंदर गोष्ट म्हणजे तू! 🥹
+      आजचा दिवस तुझ्यासारखाच सुंदर जावो.
+      तुझ्या चेहऱ्यावरचं हसू कधीच कमी होऊ नये.
+      तुझी प्रत्येक इच्छा पूर्ण होवो.
     </p>
-
-    <h3>तू आहेस म्हणून माझं जग सुंदर आहे! ❤️</h3>
-
-    <p>खूप खूप प्रेम करतो तुझ्यावर, माझ्या बायको! 😘🩷</p>
-
-    <div class="surprise-end">Forever Mine ♾️</div>
+    <h3>खूप खूप प्रेम माझ्या बायको! 😘🩷</h3>
+    <p><b>तुझाच… आज, उद्या आणि कायम! ❤️</b></p>
   </div>
 </section>
 
-<style>
-.secret-love {
-  margin: 35px 15px;
-  padding: 30px 18px;
-  text-align: center;
-  border-radius: 28px;
-  background: linear-gradient(140deg,#ffe0ed,#e9dcff,#fff0f5);
-  color: #92245c;
-  box-shadow: 0 8px 28px rgba(180,70,130,.2);
-}
-
-.secret-icon {
-  font-size: 55px;
-  animation: butterflyFloat 2s infinite ease-in-out;
-}
-
-.secret-love h2 {
-  font-size: 23px;
-}
-
-.secret-love p {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-#secretLoveBtn {
-  border: none;
-  border-radius: 30px;
-  padding: 15px 23px;
-  margin: 15px 0;
-  background: linear-gradient(120deg,#ff5c9a,#bd69db);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  box-shadow: 0 5px 15px #e8a0ca;
-  cursor: pointer;
-}
-
-#secretLoveMessage {
-  margin-top: 25px;
-  padding: 22px 12px;
-  background: rgba(255,255,255,.75);
-  border-radius: 20px;
-  animation: revealLove 1.2s ease;
-}
-
-#secretLoveMessage[hidden] {
-  display: none;
-}
-
-.surprise-heart {
-  font-size: 65px;
-  animation: heartBeat 1s infinite;
-}
-
-#secretLoveMessage h3 {
-  line-height: 1.7;
-  color: #d63384;
-}
-
-.surprise-end {
-  margin-top: 20px;
-  font-size: 20px;
-  font-style: italic;
-}
-
-.love-particle {
-  position: fixed;
-  top: 100vh;
-  left: var(--left);
-  z-index: 9999;
-  pointer-events: none;
-  font-size: 27px;
-  animation: flyLove var(--duration) ease-out forwards;
-}
-
-@keyframes butterflyFloat {
-  0%,100% { transform: translateY(0) rotate(-8deg); }
-  50% { transform: translateY(-12px) rotate(8deg); }
-}
-
-@keyframes heartBeat {
-  0%,100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-}
-
-@keyframes revealLove {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes flyLove {
-  to {
-    transform: translateY(-120vh) translateX(var(--drift)) rotate(360deg);
-    opacity: 0;
-  }
-}
-</style>
+<footer class="footer">
+  <div style="font-size:35px">❤️</div>
+  <p>Made with endless love, just for you.</p>
+  <p><b>Suraj ❤️ Pratuu</b></p>
+  <p>Forever & Always ♾️</p>
+</footer>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const button = document.getElementById("secretLoveBtn");
-  const message = document.getElementById("secretLoveMessage");
+// COUNTDOWN
+function updateCountdown() {
+  const birthday = new Date("December 22, 2026 00:00:00").getTime();
+  const now = new Date().getTime();
+  const distance = birthday - now;
+  const timer = document.getElementById("timer");
 
-  if (!button || !message) return;
+  if (distance <= 0) {
+    timer.textContent = "Happy Birthday! 🎂❤️";
+    return;
+  }
 
-  button.addEventListener("click", function () {
-    message.hidden = false;
-    button.textContent = "माझं प्रेम फक्त तुझ्यासाठी! ❤️";
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    const symbols = ["💗", "💕", "🦋", "❤️", "🌸", "💖"];
+  timer.textContent =
+    days + " दिवस " + hours + " तास " +
+    minutes + " मिनिटे " + seconds + " सेकंद";
+}
 
-    for (let i = 0; i < 28; i++) {
-      const particle = document.createElement("div");
-      particle.className = "love-particle";
-      particle.textContent =
-        symbols[Math.floor(Math.random() * symbols.length)];
+updateCountdown();
+setInterval(updateCountdown, 1000);
 
-      particle.style.setProperty("--left", Math.random() * 100 + "vw");
-      particle.style.setProperty("--drift", (Math.random() * 160 - 80) + "px");
-      particle.style.setProperty("--duration", (3 + Math.random() * 3) + "s");
-
-      document.body.appendChild(particle);
-
-      setTimeout(function () {
-        particle.remove();
-      }, 6500);
-    }
+// SCROLL
+function goTo(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
   });
+}
+
+// FLOATING HEARTS AND FLOWERS
+function createParticles(total) {
+  const symbols = ["💗","💕","🦋","❤️","🌸","💖","🌹","✨"];
+
+  for (let i = 0; i < total; i++) {
+    const item = document.createElement("span");
+    item.className = "particle";
+    item.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+    item.style.setProperty("--left", Math.random() * 100 + "vw");
+    item.style.setProperty("--drift", (Math.random() * 160 - 80) + "px");
+    item.style.setProperty("--duration", (3 + Math.random() * 3) + "s");
+
+    document.body.appendChild(item);
+    setTimeout(() => item.remove(), 6500);
+  }
+}
+
+// SECRET BUTTON
+document.getElementById("secretBtn").addEventListener("click", function() {
+  const message = document.getElementById("secretMessage");
+  message.classList.remove("hidden");
+  this.textContent = "माझं प्रेम फक्त तुझ्यासाठी! ❤️";
+  createParticles(28);
+  message.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
-
-<!-- BIRTHDAY CAKE SURPRISE 🎂 -->
-
-<section class="birthday-cake-section">
-  <div class="cake-heading">आता तुझ्यासाठी अजून एक Surprise! 🎀</div>
-
-  <p>माझ्या बाळा, हा केक कापशील का? 🥹</p>
-
-  <button id="birthdayCake" aria-label="Birthday cake">
-    <span class="cake-candle">🕯️</span>
-    <span class="cake-emoji">🎂</span>
-    <span class="cake-hint">माझ्यावर क्लिक कर ❤️</span>
-  </button>
-
-  <div id="birthdayWish" hidden>
-    <h2>Happy Birthday Pratuu! 🎉</h2>
-    <div class="birthday-rose">🌹🌸🌹</div>
-
-    <p>
-      आजचा दिवस तुझ्यासारखाच सुंदर जावो.
-      तुझ्या चेहऱ्यावरचं हसू कधीच कमी होऊ नये.
-      तुझी प्रत्येक इच्छा पूर्ण होवो.
-    </p>
-
-    <h3>खूप खूप प्रेम माझ्या बायको! 😘🩷</h3>
-    <div class="birthday-forever">तुझाच… आज, उद्या आणि कायम! ❤️</div>
-  </div>
-</section>
-
-<style>
-.birthday-cake-section {
-  margin: 35px 15px;
-  padding: 30px 18px;
-  text-align: center;
-  border-radius: 28px;
-  background: linear-gradient(145deg,#ffe0ec,#eadfff,#fff1f5);
-  color: #92245c;
-  box-shadow: 0 8px 28px rgba(180,70,130,.2);
-}
-
-.cake-heading {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.birthday-cake-section p {
-  line-height: 1.9;
-  font-size: 16px;
-}
-
-#birthdayCake {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  padding: 12px;
-  color: #92245c;
-}
-
-.cake-emoji {
-  font-size: 100px;
-  animation: cakeBounce 1.5s infinite ease-in-out;
-}
-
-.cake-candle {
-  font-size: 32px;
-  margin-bottom: -8px;
-}
-
-.cake-hint {
-  font-size: 14px;
-  margin-top: 8px;
-}
-
-#birthdayWish {
-  margin-top: 22px;
-  padding: 20px 12px;
-  background: rgba(255,255,255,.8);
-  border-radius: 20px;
-  animation: wishAppear 1s ease;
-}
-
-#birthdayWish[hidden] {
-  display: none;
-}
-
-#birthdayWish h2 {
-  color: #d63384;
-  font-size: 25px;
-}
-
-#birthdayWish h3 {
-  color: #d63384;
-  line-height: 1.7;
-}
-
-.birthday-rose {
-  font-size: 35px;
-}
-
-.birthday-forever {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.cake-firework {
-  position: fixed;
-  z-index: 10000;
-  pointer-events: none;
-  top: var(--top);
-  left: var(--left);
-  font-size: 28px;
-  animation: fireworkPop 2.5s ease-out forwards;
-}
-
-@keyframes cakeBounce {
-  0%,100% { transform: translateY(0) rotate(-3deg); }
-  50% { transform: translateY(-12px) rotate(3deg); }
-}
-
-@keyframes wishAppear {
-  from { opacity: 0; transform: scale(.8); }
-  to { opacity: 1; transform: scale(1);}
-
-@keyframes fireworkPop {
-  0% { opacity: 0; transform: scale(.3) translateY(0); }
-  20% { opacity: 1; transform: scale(1.4) translateY(-20px); }
-  100% { opacity: 0; transform: scale(.8) translateY(-180px) rotate(180deg); }
-}
-</style>
-
-
-<!-- BIRTHDAY CAKE SURPRISE 🎂 -->
-
-<section class="birthday-cake-section">
-  <div class="cake-heading">आता तुझ्यासाठी अजून एक Surprise! 🎀</div>
-
-  <p>माझ्या बाळा, हा केक कापशील का? 🥹</p>
-
-  <button id="birthdayCake" aria-label="Birthday cake">
-    <span class="cake-candle">🕯️</span>
-    <span class="cake-emoji">🎂</span>
-    <span class="cake-hint">माझ्यावर क्लिक कर ❤️</span>
-  </button>
-
-  <div id="birthdayWish" hidden>
-    <h2>Happy Birthday Pratuu! 🎉</h2>
-    <div class="birthday-rose">🌹🌸🌹</div>
-
-    <p>
-      आजचा दिवस तुझ्यासारखाच सुंदर जावो.
-      तुझ्या चेहऱ्यावरचं हसू कधीच कमी होऊ नये.
-      तुझी प्रत्येक इच्छा पूर्ण होवो.
-    </p>
-
-    <h3>खूप खूप प्रेम माझ्या बायको! 😘🩷</h3>
-    <div class="birthday-forever">तुझाच… आज, उद्या आणि कायम! ❤️</div>
-  </div>
-</section>
-
-<style>
-.birthday-cake-section {
-  margin: 35px 15px;
-  padding: 30px 18px;
-  text-align: center;
-  border-radius: 28px;
-  background: linear-gradient(145deg,#ffe0ec,#eadfff,#fff1f5);
-  color: #92245c;
-  box-shadow: 0 8px 28px rgba(180,70,130,.2);
-}
-
-.cake-heading {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.birthday-cake-section p {
-  line-height: 1.9;
-  font-size: 16px;
-}
-
-#birthdayCake {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  padding: 12px;
-  color: #92245c;
-}
-
-.cake-emoji {
-  font-size: 100px;
-  animation: cakeBounce 1.5s infinite ease-in-out;
-}
-
-.cake-candle {
-  font-size: 32px;
-  margin-bottom: -8px;
-}
-
-.cake-hint {
-  font-size: 14px;
-  margin-top: 8px;
-}
-
-#birthdayWish {
-  margin-top: 22px;
-  padding: 20px 12px;
-  background: rgba(255,255,255,.8);
-  border-radius: 20px;
-  animation: wishAppear 1s ease;
-}
-
-#birthdayWish[hidden] {
-  display: none;
-}
-
-#birthdayWish h2 {
-  color: #d63384;
-  font-size: 25px;
-}
-
-#birthdayWish h3 {
-  color: #d63384;
-  line-height: 1.7;
-}
-
-.birthday-rose {
-  font-size: 35px;
-}
-
-.birthday-forever {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.cake-firework {
-  position: fixed;
-  z-index: 10000;
-  pointer-events: none;
-  top: var(--top);
-  left: var(--left);
-  font-size: 28px;
-  animation: fireworkPop 2.5s ease-out forwards;
-}
-
-@keyframes cakeBounce {
-  0%,100% { transform: translateY(0) rotate(-3deg); }
-  50% { transform: translateY(-12px) rotate(3deg); }
-}
-
-@keyframes wishAppear {
-  from { opacity: 0; transform: scale(.8); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes fireworkPop {
-  0% { opacity: 0; transform: scale(.3) translateY(0); }
-  20% { opacity: 1; transform: scale(1.4) translateY(-20px); }
-  100% { opacity: 0; transform: scale(.8) translateY(-180px) rotate(180deg); }
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const cake = document.getElementById("birthdayCake");
+// CAKE BUTTON
+document.getElementById("cakeBtn").addEventListener("click", function() {
   const wish = document.getElementById("birthdayWish");
-
-  if (!cake || !wish || cake.dataset.ready) return;
-  cake.dataset.ready = "true";
-
-  cake.addEventListener("click", function () {
-    wish.hidden = false;
-    cake.querySelector(".cake-hint").textContent =
-      "तुझ्यासाठी खूप सारा प्रेम! ❤️";
-
-    const decorations = ["🎉", "🌹", "💖", "✨", "🎊", "🌸", "💕"];
-
-    for (let i = 0; i < 45; i++) {
-      const item = document.createElement("span");
-      item.className = "cake-firework";
-      item.textContent =
-        decorations[Math.floor(Math.random() * decorations.length)];
-
-      item.style.setProperty("--left", Math.random() * 95 + "vw");
-      item.style.setProperty("--top", (20 + Math.random() * 60) + "vh");
-
-      document.body.appendChild(item);
-      setTimeout(() => item.remove(), 2600);
-    }
-
-    wish.scrollIntoView({ behavior: "smooth", block: "center" });
-  });
+  wish.classList.remove("hidden");
+  this.querySelector(".cake-hint").textContent = "तुझ्यासाठी खूप सारा प्रेम! ❤️";
+  createParticles(55);
+  wish.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 </script>
-
 
 </body>
 </html>
